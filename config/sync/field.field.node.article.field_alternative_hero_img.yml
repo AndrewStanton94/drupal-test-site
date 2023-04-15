@@ -1,0 +1,29 @@
+uuid: 49c9d297-c1d2-45e4-8124-4c3e62b36799
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alternative_hero_img
+    - media.type.image
+    - node.type.article
+id: node.article.field_alternative_hero_img
+field_name: field_alternative_hero_img
+entity_type: node
+bundle: article
+label: 'alternative hero img'
+description: 'A hero image using the media library'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

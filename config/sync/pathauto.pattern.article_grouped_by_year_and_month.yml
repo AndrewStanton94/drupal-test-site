@@ -1,0 +1,22 @@
+uuid: edfe42f8-4c50-499e-bb2c-671304896707
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: article_grouped_by_year_and_month
+label: 'Article grouped by year and month'
+type: 'canonical_entities:node'
+pattern: '/article/[node:created:html_month]/[node:title]'
+selection_criteria:
+  faea5c21-4b96-4a6b-ba16-e83babef039c:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: faea5c21-4b96-4a6b-ba16-e83babef039c
+    context_mapping:
+      node: node
+    bundles:
+      article: article
+selection_logic: and
+weight: -5
+relationships: {  }

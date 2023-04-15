@@ -1,0 +1,10 @@
+uuid: dbd0030b-031d-4147-8b1b-98fe0a2c1875
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.token
+label: Token
+targetEntityType: media
+cache: true
