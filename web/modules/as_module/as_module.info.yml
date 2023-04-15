@@ -3,3 +3,4 @@ type: module
 description: First module on Drupal 9, created by Drush
 package: Andrew
 core_version_requirement: ^9 || ^10
+configure: as_module.settings_form
