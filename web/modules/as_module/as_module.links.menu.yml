@@ -1,0 +1,6 @@
+as_module.settings_form:
+  title: 'AS module'
+  description: 'Configure AS module.'
+  parent: system.admin_config_system
+  route_name: as_module.settings_form
+  weight: 10

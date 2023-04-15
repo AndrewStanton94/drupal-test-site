@@ -1,0 +1,8 @@
+# Schema for the configuration files of the AS module module.
+as_module.settings:
+  type: config_object
+  label: 'AS module settings'
+  mapping:
+    example:
+      type: string
+      label: 'Example'
