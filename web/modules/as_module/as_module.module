@@ -16,4 +16,26 @@ function as_module_node_view(array &$build, EntityInterface $entity, EntityViewD
     '#markup' => '<marquee>This is awesome</marquee>',
     '#allowed_tags' => ['marquee'],
   ];
+
+  $module_handler = \Drupal::moduleHandler();
+  $horsemen = $module_handler->invokeAll('as_module_horsemen_info');
+
+  $messenger = \Drupal::messenger();
+  $messenger->addStatus(json_encode($horsemen));
+
+  $build['horsemen'] = [
+    '#markup' => t(
+      'There are @count registered horsemen',
+      ['@count' => count($horsemen)]
+    ),
+  ];
+}
+
+/**
+ * Implements hook_as_module_horsemen_info().
+ */
+function as_module_as_module_horsemen_info() {
+  // Repetitive name is because:
+  // this is the as_module implementation of a hook defined in as_module.
+  return ['War', 'Famine', 'Plague', 'Death'];
 }
