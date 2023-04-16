@@ -20,6 +20,8 @@ Since then, I've:
 - Have done these tasks between the 2 devices, keeping them in sync by reimporting the database and copying the image files
 - Practised using drush to manage modules
 - Moved the config sync file to the root
+- Called an existing hook
+- Defined and called a new hook
 
 ## Questions
 
@@ -44,3 +46,7 @@ Since then, I've:
 
 - Having read that cron only fires after the site is visited, what is the process for ensuring things run on time? Triggering it externally?
 - Should individual items be separated out into queues?
+
+### The future of hooks
+
+- Drupalise.me says there are now events and plugins in Drupal. How mature are these options and do you anticipate them replacing most/all hooks any time soon?
