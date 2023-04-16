@@ -11,11 +11,9 @@ use Drupal\Core\Entity\EntityInterface;
 /**
  * Implements hook_entity_view().
  */
-function as_module_entity_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
-  if ($entity->getEntityType()->id() === 'node') {
-    $build['awesome'] = [
-      '#markup' => '<marquee>This is awesome</marquee>',
-      '#allowed_tags' => ['marquee'],
-    ];
-  }
+function as_module_node_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  $build['awesome'] = [
+    '#markup' => '<marquee>This is awesome</marquee>',
+    '#allowed_tags' => ['marquee'],
+  ];
 }
