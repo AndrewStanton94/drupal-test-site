@@ -39,21 +39,12 @@ class ComposerStaticInit1bf587d4cdba26283712c0606b7000cb
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
         '2f69d3914119f042cca9e44442d5ce95' => __DIR__ . '/../..' . '/web/core/includes/bootstrap.inc',
         '6db5533840cb1ae1bc049452845aa88e' => __DIR__ . '/../..' . '/web/core/includes/guzzle_php81_shim.php',
-        '9b38cf48e83f5d8f60375221cd213eee' => __DIR__ . '/..' . '/phpstan/phpstan/bootstrap.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
-        'm' => 
-        array (
-            'mglaman\\PHPStanDrupal\\' => 22,
-        ),
-        'V' => 
-        array (
-            'VariableAnalysis\\' => 17,
-        ),
         'T' => 
         array (
             'Twig\\' => 5,
@@ -94,7 +85,6 @@ class ComposerStaticInit1bf587d4cdba26283712c0606b7000cb
             'Symfony\\Component\\Console\\' => 26,
             'Symfony\\Cmf\\Component\\Routing\\' => 30,
             'Symfony\\Bridge\\PsrHttpMessage\\' => 30,
-            'SlevomatCodingStandard\\' => 23,
             'SelfUpdate\\' => 11,
         ),
         'R' => 
@@ -109,10 +99,6 @@ class ComposerStaticInit1bf587d4cdba26283712c0606b7000cb
             'Psr\\Container\\' => 14,
             'Psr\\Cache\\' => 10,
             'PhpParser\\' => 10,
-            'PHPStan\\PhpDocParser\\' => 21,
-            'PHPStan\\ExtensionInstaller\\' => 27,
-            'PHPStan\\' => 8,
-            'PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => 57,
         ),
         'M' => 
         array (
@@ -146,8 +132,6 @@ class ComposerStaticInit1bf587d4cdba26283712c0606b7000cb
             'Drupal\\Composer\\Plugin\\Scaffold\\' => 32,
             'Drupal\\Composer\\Plugin\\ProjectMessage\\' => 38,
             'Drupal\\Component\\' => 17,
-            'Drupal\\' => 7,
-            'DrupalPractice\\' => 15,
             'DrupalCodeGenerator\\' => 20,
             'Doctrine\\Common\\Lexer\\' => 22,
             'Doctrine\\Common\\Annotations\\' => 28,
@@ -173,14 +157,6 @@ class ComposerStaticInit1bf587d4cdba26283712c0606b7000cb
     );
 
     public static $prefixDirsPsr4 = array (
-        'mglaman\\PHPStanDrupal\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/mglaman/phpstan-drupal/src',
-        ),
-        'VariableAnalysis\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/sirbrillig/phpcs-variable-analysis/VariableAnalysis',
-        ),
         'Twig\\' => 
         array (
             0 => __DIR__ . '/..' . '/twig/twig/src',
@@ -321,10 +297,6 @@ class ComposerStaticInit1bf587d4cdba26283712c0606b7000cb
         array (
             0 => __DIR__ . '/..' . '/symfony/psr-http-message-bridge',
         ),
-        'SlevomatCodingStandard\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/slevomat/coding-standard/SlevomatCodingStandard',
-        ),
         'SelfUpdate\\' => 
         array (
             0 => __DIR__ . '/..' . '/consolidation/self-update/src',
@@ -357,22 +329,6 @@ class ComposerStaticInit1bf587d4cdba26283712c0606b7000cb
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
-        ),
-        'PHPStan\\PhpDocParser\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/phpstan/phpdoc-parser/src',
-        ),
-        'PHPStan\\ExtensionInstaller\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/phpstan/extension-installer/src',
-        ),
-        'PHPStan\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/phpstan/phpstan-deprecation-rules/src',
-        ),
-        'PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/dealerdirect/phpcodesniffer-composer-installer/src',
         ),
         'Masterminds\\' => 
         array (
@@ -445,14 +401,6 @@ class ComposerStaticInit1bf587d4cdba26283712c0606b7000cb
         'Drupal\\Component\\' => 
         array (
             0 => __DIR__ . '/../..' . '/web/core/lib/Drupal/Component',
-        ),
-        'Drupal\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/drupal/coder/coder_sniffer/Drupal',
-        ),
-        'DrupalPractice\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/drupal/coder/coder_sniffer/DrupalPractice',
         ),
         'DrupalCodeGenerator\\' => 
         array (
