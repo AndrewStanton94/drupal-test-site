@@ -3,7 +3,7 @@ recipe: drupal9
 domain: my-first-drupal9-app.lndo.site #(site.local.com)
 config:
   webroot: web
-  php: 7.4
+  php: 8.1
   via: nginx:1.16
   database: mysql:5.7
   drush: 8.3.5
