@@ -1,4 +1,38 @@
 name: my-first-drupal9-app
 recipe: drupal9
+domain: my-first-drupal9-app.lndo.site #(site.local.com)
 config:
   webroot: web
+  php: 8.1
+  via: nginx:1.16
+  database: mysql:5.7
+  drush: 8.3.5
+  xdebug: true
+  config:
+    vhosts: .lando/nginx/my-first-drupal9-app.lndo.site
+    php: .lando/php/php.ini
+  tooling:
+    drush:
+      service: appserver
+      cmd: drush --root=/app/web -l my-first-drupal9-app.lndo.site
+services:
+  appserver:
+    composer_version: 1.10.22 # Change this if the site uses a specific version
+    run_as_root:
+      - .lando/scripts/init.sh
+    overrides:
+      environment:
+        PHP_IDE_CONFIG: "serverName=localhost"
+        XDEBUG_SESSION: "PHPStorm"
+  pma:
+    type: phpmyadmin:5.0
+    hosts: [ database ]
+proxy:
+  appserver_nginx:
+    - my-first-drupal9-app.lndo.site
+  pma:
+    - pma.my-first-drupal9-app.lndo.site
+events:
+  post-db-import:
+    - echo "Clearing site cache."
+    - appserver: cd /app/web && drush cr > /dev/null
